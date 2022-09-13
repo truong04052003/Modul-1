@@ -1,0 +1,89 @@
+<script>
+    var a = 4;//4
+    var b = 2;
+
+    // Toan tu toan hoc
+    var c = a + b;
+    var d = a - b;
+    var e = a * b;
+    var f = a / b;
+
+    // Toan tu gan
+    a += b;// a = a + b => 6 
+    console.log(a);
+    a -= 2;// a = a - 2 => 4
+    console.log(a);
+    a *= 5;
+    console.log(a);
+    a /= 2;
+    console.log(a);
+
+    // Toan tu cong chuoi: (+)
+    var ho = 'Nguyen Van ';
+    var ten = 'A';
+    var ho_va_ten = ho + ten;//Nguyen Van A
+    console.log(ho_va_ten);
+
+    // Toan tu so sanh
+    var num1 = 6;
+    var num2 = 5;
+
+    console.log(num1 > num2); //true
+    console.log(num1 < num2); //false
+    console.log(num1 == num2); //false
+
+    var num3 = 5;
+    var num4 = '5';
+
+    console.log('================================');
+    console.log( typeof num3 );//number
+    console.log( typeof num4 );//string
+    console.log('================================');
+
+
+    console.log(num3 == num2); //true
+    console.log(num3 === num2); //false
+    console.log(num3 >= num2); //true
+    console.log(num3 <= num2); //true
+    console.log(num3 !== num2); //true
+
+    
+    var so_1 = 7;
+    var so_2 = 5;
+    var so_3 = 6;
+
+    so_1 > so_2 || so_2 > so_5
+    console.log( so_1 > so_2 || so_2 > so_5 );
+//       true   ||     false        => true    
+
+    so_1 > so_2 && so_3 > so_2 && so_1 > so_3
+//       true   &&    true      &&    true      => true
+
+    so_1 > so_2 && so_3 < so_2
+//        true  &&    false           => false     
+
+if( so_1 > so_2 && so_1 > so_3 ){
+    console.log('So 1 là số lớn nhất')
+}
+if( so_2 > so_1 && so_2 > so_3 ){
+    console.log('So 2 là số lớn nhất')
+}
+
+if( so_3 > so_1 && so_3 > so_2 ){
+    console.log('So 3 là số lớn nhất')
+}
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+
+</script>
