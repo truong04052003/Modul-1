@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không.
+        // Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0.
+
+        var a = prompt('nhập vào số tuổi')
+        if (a <= 120 && a > 0) {
+            alert('a là tuổi của một người');
+        } else if (a < 0) {
+            alert('chưa đẻ ')
+        } else {
+            alert('Tuổi của rùa')
+        }
+
+        //==================================================================
+        //Bài 7: Giải phương trình bậc 2.
+
+        var a = parseInt(prompt('nhập a'))
+        var b = parseInt(prompt('nhập b'))
+        var c = parseInt(prompt('nhập c'))
+        var Δ = (b * b - (4 * a * c))
+        switch (true) {
+            case Δ > 0:
+                console.log('phương trình có 2 nghiệm');
+                break;
+            case Δ < 0:
+                console.log('phương trình vô nghiệm');
+                break;
+            default:
+                console.log('phương trình có nghiệm kép');
+                break;
+        }
+        // ======================================================================
+
+        //  Bài 4: Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b
+        var a = parseInt(prompt('nhập a'))
+        var b = parseInt(prompt('nhập b'))
+        var c = a * b
+        if (a != 0 && b != 0) {
+            console.log('diện tích hình  chữ nhật' + c);
+        } else {
+            console.log('không phải là hình chữ nhật ');
+        }
+
+        //==========================================================================
+        //Bài 2: Chuyển từ mét sang feet:
+        var m = prompt('nhập mét')
+        var ft = m * 3.2808
+        alert('độ dài feet' + ft)
+
+
+        //================================================================================================
+        //Bài 1: Chuyển từ độ C sang độ F.
+        var C = prompt('nhập °C')
+        var F = C *  9/5 + 32
+        alert ('Độ F='+ F )
+
+        //==============================================================================================
+
+
+        //Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.
+        var a = parseInt(prompt('nhập a'))
+        var b = parseInt(prompt('nhập b'))
+        var c = 1/2 * a * b
+        if (a != 0 && b != 0) {
+            console.log('diện tích tam giác ' + c );
+        }else {
+            console.log('ko là diện tích hình vuông ');
+        }
+
+        //==========================================================================================================
+
+
+        //Bài 3: Tính diện tích hình vuông khi biết cạnh a.
+        var a = parseInt(prompt('nhập a'))
+        var truong = a * a
+        if (a != 0) {
+            console.log('diện tích hình vuông là  ' + truong);
+        } else {
+            console.log('ko phải diện tích hình vuông');
+        }
+
+
+        //=====================================================================================================================
+
+        //Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác. Điều kiện để a,b,c là cạnh của một tam giác là:
+        var a = parseInt(prompt('nhập a'))
+        var b = parseInt(prompt('nhập b'))
+        var c = parseInt(prompt('nhập c'))
+        switch (true) {
+            case ((a + b > c) && (b + c > a) && (a + c > b)):
+           console.log('a,b,c là cạnh của một tam giác');
+                break;
+            default:
+                console.log('a,b,c ko phải là cạnh của một tam giác ');
+                break;
+        }
+
+
+        // Bài 10: Viết chương trình tính giá điện.
+        var a = parseInt(prompt('lượng điện tiêu thụ '))
+        if (a > 0 && a <=50  ){
+            var td = a * 1.484
+            alert('lượng điện tiêu thụ='+ a +'W' +' tiền điện phải trả là ' + td.toFixed(2) + 'VND');
+        }else if (a>=51 && a<=100){
+            var td = a * 1.533
+            alert('lượng điện tiêu thụ='+ a +'W' +' tiền điện phải trả là ' + td.toFixed(2) + 'VND');
+        }
+
+
+     
+
+
+
+
+
+    </script>
+</body>
+
+</html>
