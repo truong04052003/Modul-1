@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var tu_sach = [
+            ['van', 'su', 'dia'], // 0
+            //   0    1      2 
+            ['toan', 'ly', 'hoa'], // 1
+            //      0     1    2           
+        ];
+
+        console.log(tu_sach);
+
+        // truy xuất phần tử trỏng mảng
+        console.log(tu_sach[0][0]); // van
+        console.log(tu_sach[0][2]); //địa
+        console.log(tu_sach[1][2]); // hoa
+
+
+        // Thay đổi phần tử trong mảng 
+
+        tu_sach[0][0] = 'van hoc'
+        tu_sach[1][1] = 'vat ly'
+        tu_sach[0][2] = 'đia ly'
+        // thêm phần tử vào mảng
+        tu_sach[0].push('Anh')
+        tu_sach[1][3] = ' hoa'
+
+        // duyet mang
+        for (var i = 0; i < tu_sach.length ; i++) {
+/**/
+
+            for (var k = 0; k < tu_sach[i].length; k++) {
+                console.log(tu_sach[i][k]);
+            }
+        }
+
+
+//
+
+
+    </script>
+</body>
+
+</html>

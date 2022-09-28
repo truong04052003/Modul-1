@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        // khai báo hàm ko có tham số
+
+        function name_of_function()
+        {
+            // Some code
+        }
+        //gọi hàm
+        name_of_function()
+
+         
+
+     
+        //========================================================================================
+
+        //khai báo hàm có tham số
+        function name_of_function(ts_1 , ts_2,...){
+        
+            // some code
+        }
+        //gọi hàm có tham số
+        name_of_function(gia_tri_1 , gia_tri_2);
+
+
+
+        */
+
+        // function xin_chao() {
+        //     console.log('xin chào các bạn');
+        // }
+        // xin_chao();
+
+
+
+        // function tinh_tong(a, b) {
+
+        //     console.log(a + b);
+        // }
+        //gọi hàm có tham số
+        // tinh_tong(5, 6);
+        // tinh_tong(5, 7);
+
+        /*
+
+        //  hàm có sự tả về
+      function name_of_function(ts_1, ts_2, ...) {
+          return gia_tri_tra_ve
+      }
+      // gọi hàm có sự trả về
+     name_of_function(gia_tri_1 , gia_tri_2);
+                
+                
+                
+        //Tạo hàm tính tích 2 số:
+         tên là tich:
+          tham số 1: a
+          tham số 2: b
+          trong hàm, trả về kết quả a * b
+         gọi hàm và gán vào biến ket_qua, sau đó in biến ket_qua ra
+                
+                */
+
+        function tich(a, b) {
+            return a * b
+        }
+        var ket_qua = tich(4, 5);//
+        console.log(ket_qua);
+
+
+        /*
+            viết hàm kiểm tra số chẵn
+            tên hàm: kiem_tra_so_chan
+            tham số: num
+            dùng cấu trúc điều kiện kiểm tra num là chẵn hay lẽ
+            trả về: nếu chẵn thì true, ngược lại false
+            gọi hàm lần 1 và truyền vào 5, in hàm
+            gọi hàm lần 2 và truyền vào 4, in hàm
+            */
+
+        function kiem_tra_so_chan(num) {
+            if (num % 2 == 0) {
+                return true
+            } else {
+                return false
+            }
+        }
+        console.log(kiem_tra_so_chan(5)); //false
+        console.log(kiem_tra_so_chan(4)); // true
+
+
+
+        //       4. Viết một chương trình máy tính, 
+        // - có 4 hàm thực hiện các phép tính cộng trừ nhân chia cho 2 số a,b, trả về kết quả
+        // - cho biến pheptinh bằng một trong 4 giá trị + - * /
+        // - dùng khối lệnh switchcase để gọi các hàm tương ứng với giá trị của pheptinh , truyền vào 6,2
+        // - các case đều gán vào biến result
+        // - sau khối lệnh switchcase in ra biến result theo cấu trúc:
+        // - GIA_TRI_A PHEP_TINH GIA_TRI_B = KET_QUA
+        // Ví dụ: 5 + 6 = 11
+
+
+
+        function phep_cong(a, b) {
+            return a + b
+        }
+        function phep_tru(a, b) {
+            return a - b
+        }
+        function phep_nhan(a, b) {
+            return a * b
+        }
+        function phep_chia(a, b) {
+            return a / b
+        }
+        var phep_tinh = '+'
+        switch (phep_tinh) {
+            case '+':
+                var result = phep_cong(5, 6)
+                break;
+            case '-':
+                var result = phep_tru(5, 6)
+                break;
+            case '*':
+                var result = phep_nhan(5, 6)
+                break;
+            case '/':
+                var result = phep_chia(5, 6)
+
+            default:
+                break;
+        }
+        console.log(result = phep_cong(5, 6));
+        console.log(result = phep_tru(5, 6));
+        console.log(result = phep_nhan(5, 6));
+        console.log(result = phep_chia(5, 6));
+
+
+
+
+       
+
+        
+    </script>
+</body>
+
+</html>

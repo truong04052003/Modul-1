@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        var boocks = ['toan', 'ly', 'hoa'];
+        //               0     1      2
+
+        //length : 3 ( chiều dài của mảng )
+
+        // truy xuát phần tử trỏng mảng
+        console.log(books[0]); //toán
+        console.log(books[1]);  //lý
+        console.log(books[2]);  //hóa
+        // Thay đổi phần tử trong mảng 
+        books[0] = 'toán học';
+        books[1] = 'vật lý';
+        books[2] = 'hóa học ';
+
+
+        //Thêm phần tử vào mảng 
+        books[3] = ' sinh học '
+        books.push('tiếng anh'); // 4 => tiếng anh
+        // in ra chiều dài của mảng 
+        console.log(books.length);// 5
+
+
+        for (var i = 0; i < 5; i++) {
+            console.log(books[i]);
+        }
+
+
+    </script>
+</body>
+
+</html>
