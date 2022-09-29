@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //LỚP
+        /*  
+        var ClassName = function () {
+            //thuoc tinh
+            this.property1 = '';
+            this.property2 = '';
+
+            //phuongthuc
+            this.methor_1 = function () {
+
+            }
+
+            this.methor_2 = function () {
+
+            }
+        }
+
+        */
+       //lớp Student có phương thức khởi tạo có 3 tham số 
+        var Student = function (ts_name,ts_age,ts_gender) {
+            //thuoc tinh
+            this.name = ts_name;
+            this.age = ts_age;
+            this.gender = ts_gender;
+
+            //phương thức thiết lập giá trị thuộc tính
+            this.setName = function (ts_name) {
+                this.name = ts_name
+            }
+
+            this.setAge = function (ts_age) {
+                this.age = ts_age
+            }
+            this.setGender = function (ts_gender) {
+                this.gender = ts_gender
+            }
+
+            //phương thức trả về giá trị thuộc tính
+            this.getName = function () {
+                return this.name
+            }
+            this.getAge = function () {
+                return this.age
+            }
+            this.getGender = function () {
+                return this.gender
+            }
+        }
+
+        //khoi tao doi tuong : truyền 3 đối số
+        var objToan = new Student('Truong',19 ,'male');
+        var objVy = new Student('Vy',18 ,'female');
+        console.log(objToan);
+        console.log(objVy);
+
+
+        // thiết lập giá trị thuộc tính cho đối tượng Toàn
+        objToan.name = 'Toan';
+        objToan.age = 18;
+        objToan.gender = 'male'
+
+        // truy cập giá trị thuộc tính 
+        console.log(objToan.name);
+        console.log(objToan.age);
+        console.log(objToan.gender);
+
+
+        //truy cập phương thức
+        objToan.setName('Đăng Toàn');
+        objToan.setAge(19);
+        objToan.setGender('male');
+
+        console.log(objToan.getName());
+        console.log(objToan.getAge());
+        console.log(objToan.getGender());
+    </script>
+</body>
+
+</html>

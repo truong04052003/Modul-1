@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var MyDate = function (ts_day, ts_month, ts_year) {
+            this.day = ts_day;
+            this.month = ts_month;
+            this.year = ts_year;
+
+               //phương thức thiết lập giá trị thuộc tính
+            this.setDay = function (ts_day) {
+                this.day = ts_day
+            }
+            this.setMonth = function (ts_month) {
+                this.month = ts_month
+
+            }
+            this.setYear = function (ts_year) {
+                this.year = ts_year
+
+            }
+            this.setDate = function (ts_day,ts_month,ts_year) {
+                this.day = ts_day
+                this.month = ts_month
+                this.year = ts_year
+            }
+
+            ///phương thức trả về giá trị thuộc tính 
+            this.getDay = function () {
+                return this.day
+            }
+            this.getMonth = function () {
+                return this.month
+            }
+            this.getYear = function () {
+                return this.year
+            }
+            this.toString = function () {
+                return this.day +'/'+ this.month + '/'+ this.year
+            }
+
+        };
+        //Bước 4: Sử dụng lớp vừa tạo. Tạo đối tượng date với ngày:2, tháng:2, năm: 2007:
+        var date = new MyDate (2, 2,2007);
+        console.log(date);
+        //bước 5 Truy cập phương thức 
+        date.setDay(10);
+        date.setMonth(10);
+        date.setYear(2019);
+
+        console.log(date.getDay());
+        console.log(date.getMonth());
+        console.log(date.getYear());
+
+        console.log(date.toString());
+
+
+     
+
+
+    </script>
+</body>
+
+</html>

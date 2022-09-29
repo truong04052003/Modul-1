@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //ĐỐI TƯỢNG
+        /*
+        var objectName = {
+            property1:value1,
+            property2:value2,
+            methor_1 : function(){
+
+            }
+            methor_2 : function(){
+
+            }
+
+        };
+
+        objectName : tên đối tượng
+        property1 :thuộc tính 1
+        value1 : giá trị thuộc tính 1
+        property2 :thuộc tính 2
+         value2 : giá trị thuộc tính 2
+         methor_1 : phuong thuc 1
+          methor_2 : phuong thuc 2
+    
+
+          }
+        */
+        //khai bao doi tuong co ten la objtruong cos cac Tt tren bang
+
+        var objtruong = {
+            Name: 'truong',
+            age: 19,
+            gender: 'male'
+        };
+        console.log(objtruong);
+
+        // c1: tao mot doi tuong gom thong tin cua ban than
+        //c2: tu doi tuong do, tao them 2 phuong thuc learning, working, saying
+        var objtruong = {
+            name: 'truong',
+            age: 19,
+            gender: 'male',
+            learning: function () {
+                console.log('learning');
+            },
+            working: function () {
+                console.log('working');
+
+            },
+            saying: function (message) {
+                return message;
+
+            },
+        };
+        console.log(objtruong);
+
+        //truy cap thuoc tinh              
+        console.log(objtruong.name);
+        console.log(objtruong.age);
+        console.log(objtruong.gender);
+
+        //truy cap phuong thuc               Tên_đối_tượng.tên_phương_thức()
+        objtruong.learning()
+        objtruong.working()
+        console.log(objtruong.saying('hello'));
+
+
+
+    </script>
+</body>
+
+</html>

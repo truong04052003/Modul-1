@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+
+        var objanhthu = {
+            name: 'anhthu',
+            age: 16,
+            gender: 'female',
+            learning: function () {
+                console.log('learning');
+            },
+            working: function () {
+                console.log('working');
+            },
+            saying : function(message){
+                return message;
+            }
+        };
+        console.log(objanhthu);
+        // truy cập thuộc tính 
+        console.log(objanhthu.name);
+        console.log(objanhthu.age);
+        console.log(objanhthu.gender);
+        //truy cập phuong thuc
+        objanhthu.learning()
+        objanhthu.working()
+        console.log(objanhthu.saying('hello'));
+*/
+
+        var Student = function (ts_name, ts_age, ts_gender) {
+            //thuoc tinh
+            this.name = ts_name
+            this.age = ts_age
+            this.gender = ts_gender
+
+            //phương thức thiết lập giá trị thuộc tính
+            this.setName = function (ts_name) {
+                this.name = ts_name
+            }
+            this.setAge = function (ts_age) {
+                this.age = ts_age
+            }
+            this.setGender = function (ts_gender) {
+                this.gender = ts_gender
+            }
+        }
+        //phương thức trả về giá trị thuộc tính
+        this.getName = function () {
+            return this.name
+        }
+        this.getAge = function () {
+            return this.age
+        }
+        this.getGender = function () {
+            return this.gender
+        }
+        //khoi tao doi tuong : truyền 3 đối số
+        var objthu = new Student('Trường', 19, 'male');
+        console.log(objthu);
+
+        // thiết lập giá trị thuộc tính cho đối tượng Toàn
+        objthu.name = 'Thư';
+        objthu.age = 16;
+        objthu.gender = 'female';
+        // truy cập giá trị thuộc tính
+        console.log(objthu.name);
+        console.log(objthu.age);
+        console.log(objthu.gender);
+
+        //truy cập phương thức
+        objthu.setName('Minh Thư');
+        objthu.setAge(18);
+        objthu.setGender('female')
+
+        console.log(objthu.setName());
+        console.log(objthu.setAge());
+        console.log(objthu.setGender());
+        
+    </script>
+</body>
+
+</html>
