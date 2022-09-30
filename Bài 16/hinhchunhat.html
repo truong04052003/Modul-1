@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <script>
+
+        var Rectangle = function () {
+            //thuoc tinh
+            this.chieudai = 0;
+            this.chieurong = 0;
+            //phương thức thiết lập giá trị thuộc tính
+            this.tinh_chu_vi = function () {
+                var ket_qua = (this.chieudai + this.chieurong) * 2
+                console.log(ket_qua);
+            }
+            this.tinh_dien_tich = function () {
+                var ket_qua = (this.chieudai * this.chieurong)
+                console.log(ket_qua);
+
+            }
+            this.hien_thi = function () {
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d")
+                ctx.beginPath();
+                ctx.arc(95, 50, 40, 0, 1 * Math.PI);
+                ctx.fillStyle = '#fa4b2a';
+                ctx.fillRect(10, 40, this.chieudai, this.chieurong);
+            }
+
+        }
+        //khởi tạo đối tượng 
+        var hcn = new Rectangle();
+
+        // thiết lập giá trị thuộc tính chiều dài và chiều rộng
+        hcn.chieudai = 200;
+        hcn.chieurong = 100;
+
+        // gọi phương tính chu vi
+        hcn.tinh_chu_vi();
+
+        // gọi phương thức tính diện tích
+        hcn.tinh_dien_tich();
+        // gọi phương thức vẽ hình 
+        hcn.hien_thi();
+
+    </script>
+</body>
+
+</html>
