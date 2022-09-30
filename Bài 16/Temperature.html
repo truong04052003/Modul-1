@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Temperature = function(ts_C){
+            //thuoc tinh
+            this.C = ts_C
+
+            //phuongthuc
+            this.c_sang_f = function(){
+                return (this.C * 9/5 ) + 32
+            }
+            this.c_sang_k = function(){
+                return this.C + 273.15
+            }
+        }
+
+        //khoi tao doi tuong
+        var Temperature = new Temperature(25);
+        console.log(Temperature.c_sang_f());
+        console.log(Temperature.c_sang_k());
+
+    </script>
+</body>
+</html>
