@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var Battery = function () {
+            this.energy = energy;
+
+            //phương thức
+            this.setEnergy = function (energy) {
+                this.energy = energy;
+            }
+            this.getEnergy = function () {
+                return this.energy
+            }
+            this.decreaseEnergy = function () {
+                if (this.energy > 0) {
+                    this.energy--;
+                }
+            }
+
+
+        };
+        let FlashLamp = function () {
+            // thuộc tính
+            this.status = false;
+            this.battery = null
+
+
+            //phuongthuc
+            this.setBattery = function (battery) {
+                this.battery = battery;
+            }
+            this.getBatteryInfo = function () {
+                return this.battery.getEnergy();
+            };
+            this.light = function () {
+                if (this.status) {
+                    console.log('lighting');
+                } else {
+                    console.log('not lighting');
+                }
+            };
+            this.turnOn = function () {
+                this.status = true;
+            }
+            this.turnOff = function () {
+                this.status = false;
+            }
+        };
+var battery = new battery();
+battery.setEnergy(100)
+var flashLamp =  new flashLamp();
+flashLamp.setBattery(battery)
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

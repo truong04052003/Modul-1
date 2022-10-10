@@ -162,9 +162,9 @@
     <script>
         var Mobile = function (battery, luutinnhansoanthao, luutinnhanhopthuden, luutinnhandagui) {
             //thuoc tinh
-            this.battery = battery;
-            this.luu_tn_soan_thao = luutinnhansoanthao;
-            this.luu_tn_hop_thu_den = luutinnhanhopthuden;
+            this.pinStatus = battery;
+            this.luu_tn_soan_thao = 'luutinnhansoanthao';
+            this.luu_tn_hop_thu_den = [luutinnhanhopthuden];
             this.luu_tn_da_gui = luutinnhandagui;
 
             //phương thức
@@ -176,26 +176,26 @@
                 }
 
             }
-            this.bat = function () {
+            this.sturnOn = function () {
                 console.log("Dienthoaidangbat");
             };
 
-            this.tat = function () {
+            this.turnOff = function () {
                 console.log("Dienthoaidangtat");
             };
-            this.sacpin = function () {
+            this.charge = function () {
                 console.log('sạc pin' + this.battery++)
             }
-            this.soantinnhan = function () {
+            this.texting = function () {
                 console.log('soạn tin nhắn')
             }
-            this.nhantinnhan = function () {
+            this.receiveMessages = function () {
                 console.log('nhận tin nhắn');
             }
-            this.guitinnhan = function () {
+            this.sendMessage = function () {
                 console.log('gửi tin nhắn');
             }
-            this.xemtinhopthuden = function () {
+            this.seeinboxMessage = function () {
                 console.log('xem tin nhắn trong hộp thư đến');
             }
             this.xemtindagui = function(){
