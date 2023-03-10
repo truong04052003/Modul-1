@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        if (biểu thức điều kiện 1) {
+            khối mã được thực thi nếu điều kiện 1 là đúng
+        } else if (biểu thức điều kiện 2) {
+            khối mã được thực thi nếu điều kiện 1 là sai và điều kiện 2 là đúng
+        } else {
+            khối mã được thực thi nếu điều kiện 1 và điều kiện 2 đều sai
+        } 
+        
+         */
+
+
+
+        //          Checkin 9:
+        // khai báo biến day bằng 1 giá trị bất kỳ từ 2 -> 7
+        // viết chương trình kiểm tra
+        // nếu day bằng 2 hoặc 3 hoặc 4 hoặc 5 hoặc 6 thì in ra câu đi làm
+        // nếu day bằng 7 thì in ra câu: sinh hoạt CLB
+        // trường hợp còn lại in ra câu: relax
+
+        var day = prompt('nhập ngày')
+        if (day == 2 || day == 3 || day == 4 || day == 5 || day == 6) {
+            console.log('đi làm');
+        } else if (day == 7) {
+            console.log('sinh hoạt clb')
+        } else {
+            console.log('relax')
+        }
+
+
+
+        var a = prompt('nhap a')
+        var b = prompt('nhap b')
+        if (a == 0) {
+
+            if (b == 0) {
+                console.log('phuong trinh vo so nghiem')
+            } else {
+                console.log('phuong trinh vo nghiem')
+            }
+
+
+        } else {
+            console.log('phuong trinh co nghiem x=-b/a')
+        }
+
+
+    </script>
+</body>
+
+</html>
