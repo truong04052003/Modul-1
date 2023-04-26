@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Lấy giá trị từ người dùng
+
+        var a = prompt("Nhập vào số a", "0");
+        var b = prompt("Nhập vào số b", "0");
+
+        // Chuyển sang kiểu number
+        a = parseInt(a);
+        b = parseInt(b);
+
+        //Kiểm tra số nào lớn
+        if (a > b) {
+            document.write("Số a lớn hơn số b");
+        }
+        else if (a < b) {
+            document.write("Số a bé hơn số b");
+        }
+        else {
+            document.write("Số a bằng với số b");
+        }
+
+    </script>
+
+
+    <script>
+        var num = prompt("Nhập vào một số");
+
+        // Chuyển sang kiểu number
+        num = parseInt(num);
+
+        // Kiểm tra số chẵn hay lẻ
+        if (num % 2 == 0) {
+            document.write(num + ' là số chẵn');
+        }
+        else {
+            document.write(num + ' là số lẻ');
+        }
+
+
+    </script> -->
+
+
+
+    <script>
+        var a = prompt("nhập vào số a", "0");
+        //chuyển sang kiểu number 
+        a = parseInt(a);
+        if (a % 2 == 0) {
+            document.write("a là số chẵn")
+        }
+        else {
+            document.write("a là số lẽ")
+        }
+
+
+
+    </script>
+
+    <script>
+        var num = prompt("Nhập vào một số cần kiểm tra có chia hết cho 5 hay không");
+        num = parseInt(num);
+        if (num % 5 == 0) {
+            document.write(num + 'chia hết cho 5')
+        }
+        else {
+            document.write(num + 'không chia hết cho 5')
+        }
+
+
+
+    </script>
+</body>
+
+</html>

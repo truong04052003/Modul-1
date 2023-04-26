@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var Circle = function (radius) {
+            this.radius = radius;
+
+            //phương thức trả về 
+            this.getRadius = function () {
+                return radius
+            }
+            this.getArea = function () {
+                return Math.PI * radius * radius
+            }
+
+        }
+        //khởi tạo đối 
+        var circle = new Circle(2);
+        //truy cập phương thức
+        var radius = circle.getRadius();
+        var area = circle.getArea();
+        document.write('radius' + ' ' + radius + ';' + 'area' + '' + area)
+
+
+
+
+
+    </script>
+</body>
+
+</html>

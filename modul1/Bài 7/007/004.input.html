@@ -1,0 +1,14 @@
+<input type="text" name="" value="" id="username">
+<input type="button" value="Click" onclick="khoi_xu_ly()">
+
+<script>
+    // lấy giá trị từ propt
+    var name = prompt('Nhập vào tên bạn');
+    alert(name);
+
+    function khoi_xu_ly() {
+        // Lay giá trị từ ô input
+        var username = document.getElementById('username').value;
+        alert(username);
+    }
+</script>

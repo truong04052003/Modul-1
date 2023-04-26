@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ //Khai báo các biến thuộc các kiểu khác nhau, gán giá trị cho chúng và in ra tài liệu HTML.
+var i = 10;
+var f = 20.5;
+var b = true;
+var s = " hà nội ";
+
+
+document.write('i = ' + i)
+document.write('<br/>')
+document.write('f = ' + f)
+document.write('<br/>')
+document.write('b = ' + b)
+document.write('<br/>')
+document.write('s = ' + s)
+
+//Bài 2: Viết một đoạn mã Javascript, khai báo biến width chứa giá trị độ rộng của hình chữ nhật, biến height chứa giá trị chiều cao của hình chữ nhật. In ra màn hình diện tích của hình chữ nhật đó.
+var weidth = 20
+        var height = 10
+        var area = weidth * height
+        document.write('area = ' + area )
+
+
+        // Bài 3: Dùng hàm prompt() để nhập 2 số từ bàn phím, lưu vào 2 biến là a và b. Kiểm tra xem a có phải là bội số của b hay không (tức là a có chia hết cho b hay không). Hiển thị kết quả ra màn hình bằng cách sử dụng hàm alert()
+        var a = prompt ('nhap so 1')
+        var b = prompt ('nhap so 2')
+if (a % b == 0) {
+    alert (a+' là bội số của '+ b)
+} else {
+    alert (a+'không phải là bội số của '+ b)
+}
+
+
+    </script>
+
+</body>
+</html>

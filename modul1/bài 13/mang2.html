@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /*
+        - Hàm Array splice() trong Javascript
+        - https://freetuts.net/ham-array-splice-trong-javascript-4081.html
+        */
+        var months = ['Jan', 'March', 'April', 'June'];
+        //             0       1        2        3
+
+        //           ["Jan", "Feb", "March", "April", "June" ];
+        //             0       1        2      3        4
+
+        //           ["Jan", "Feb", "March", "June" ];
+        //             0       1        2      3  
+
+        //Thêm tại vị trí 1, không xóa phần tử nào.
+        months.splice(1, 0, 'Feb');//thay March, March dich chuyen qua phai
+
+        //Xoa April
+        months.splice(3, 1);
+
+        console.log(months);//["Jan", "Feb", "March", "June" ]
+
+        /*
+        - Hàm Array concat() trong Javascript
+        - https://freetuts.net/ham-array-splice-trong-javascript-4081.html
+        */
+
+        var projec1 = ["PHP", "CSS"];
+        var projec2 = ["HTML", "Python", "JS"];
+        var children = projec1.concat(projec2); //["PHP", "CSS","HTML", "Python", "JS"]
+
+
+        /*
+        - Hàm array.indexOf() trong javascript
+        - https://freetuts.net/ham-array-indexof-trong-javascript-4068.html
+        */
+
+        var students = ['Toan', 'Truong', 'Ngoc', 'Vy'];
+        //               0       1       2       3
+
+        var indexStudent = students.indexOf('Ngoc');
+        console.log(indexStudent);//2
+
+        /*
+        - Hàm array map() trong Javascript
+        - https://freetuts.net/ham-array-map-trong-javascript-4058.html
+        */
+
+        students = students.map(function (student) {
+            return 'Student: ' + student
+        });
+
+        console.log(students);
+
+    </script>
+    Collapse
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

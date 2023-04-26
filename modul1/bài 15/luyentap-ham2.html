@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+
+
+        // function binhphuong(number) {
+        //     number = number * number;
+        //     return number
+        // }
+        // var x = parseInt(prompt('nhập số'))
+        // console.log('Bình phương của :' + x + 'là:' + binhphuong(x))
+
+
+        //Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được
+        // function dien_tich(bankinh) {
+        //     var pi = 3.14
+        //     dt = bankinh * bankinh * pi
+        //     return dt
+        // }
+        // function chu_vi(bankinh) {
+        //     var pi = 3.14
+        //     cv = bankinh * 2 * pi
+        //     return cv
+        // }
+        // var x = parseInt(prompt('nhap number'))
+        // document.write("dien tich la : " + dien_tich(x) + "</br>")
+        // document.write("chu vi la : " + chu_vi(x))
+
+        // Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+        // function giaithua(x) {
+
+        //     if (x == 0) {
+        //         return 1;
+        //     }
+        //     return x * giaithua(x - 1)
+        // }
+        // console.log(giaithua(7));
+
+
+        //        Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+
+        // function checkCharacter(){
+        //     if(isNaN(Character) == false){
+        //         return true
+        //     }    return false        
+        // }
+        // var Character = prompt("Nhập kí tự :");
+        // document.write(checkCharacter(Character))
+
+
+        //Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+        function checkIntegers(a, b, c) {
+            var min = a
+            if (b < max) {
+                min = b;
+            }
+            if (c < max) {
+                max = c
+            }
+            return max
+        }
+        var d = parseInt(prompt('Nhập a'))
+        var e = parseInt(prompt('Nhập b'))
+        var f = parseInt(prompt('Nhập c'))
+        document.write(d + 'là giá trị nhỏ nhất ')
+        document.write(e + 'là giá trị nhỏ nhất ')
+        document.write(f + 'là giá trị nhỏ nhất ')
+        document.write(checkIntegers(a, b, c) + 'là số nhỏ nhất')
+
+    </script>
+</body>
+
+</html>

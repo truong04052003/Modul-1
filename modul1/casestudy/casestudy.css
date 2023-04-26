@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.top_header_left {
+    color: rgb(241, 143, 16);
+    font-weight: 600;
+
+}
+
+a {
+    color: #494f6b;
+}
+
+.img {
+    text-align: left;
+    border-radius: 110px;
+    margin: -15px 0px 30px 79px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #111;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 2px solid rgb(9, 241, 9);
+    display: inline-block;
+    color: rgb(240, 10, 10);
+    font-weight: 600;
+}
+
+ul.products {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.products li {
+    flex-basis: 26%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+ul.products li img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul.products li .product-top {
+    position: relative;
+    overflow: hidden;
+}
+
+ul.products li .product-top .product-thumb {
+    display: block;
+}
+
+ul.products li:hover .product-top .product-thumb img {
+    filter: opacity(80%);
+
+}
+
+ul.products li .product-top .product-thumb img {
+    display: block;
+}
+
+ul.products li .product-top a.buy-now {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #FF6699;
+    color: #fff;
+    padding: 10px 3.5px;
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
+
+ul.products li :hover a.buy-now {
+    bottom: 17px;
+}
+
+ul.products li .product-info {
+    padding: 10px 0px;
+}
+
+ul.products li .product-info a {
+    display: block;
+    text-decoration: none;
+}
+
+ul.products li .product-info a.product-cat {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    padding: 3px 0px;
+}
+
+ul.products li.product-info a.product-name {
+    color: #e71520;
+    padding: 3px 0px;
+
+}
+
+ul.products li .product-info .product-price {
+    color: rgb(75, 250, 6);
+    padding: 2px 0px;
+    font-weight: 600;
+    font-weight: bold;
+}
+
+.headline {
+    margin: 39px 40px 60px 28px;
+    display: flex;
+}
+
+h3 {
+    margin: 90px 15px 15px 13px;
+}
+
+.headline img {
+    border-radius: 00px;
+}
+
+* {
+    padding: 0;
+    margin: -6px 3px 5px 7px;
+}
+
+a {
+    color: rgb(219, 241, 19);
+    text-decoration: none;
+    font-weight: 600;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <th>
+                    <label for="Amount">Amount</label>
+                </th>
+                <th>From Currency</th>
+                <th>To Currency</th><select id="From">
+                    <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="Amount">
+                </td>
+
+                <td>
+                    <select id="from">
+                        <option value="VND">VND</option>slot
+                        <option value="USD">USD</option>slot
+                    </select>
+                </td>
+
+                <td>
+                    <select id="To">
+                        <option value="VND">VND</option>slot
+                        <option value="USD">USD</option>slot
+                    </select>
+                </td>
+                <td>
+                    <button onclick="ChangeMoney()">Convert</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <p id="ketqua"></p>
+    <script>
+        function ChangeMoney() {
+            var doitien = document.getElementById('doitien').value;
+            var select1 = document.getElementById('select1').value;
+            var select2 = document.getElementById('select2').value;
+            doitien = parseInt(doitien);
+            var kq = 0;
+            if (select1 == select2) {
+                kq = doitien;
+            }
+            else if (select1 == "VNĐ" && select2 == "USD") {
+                kq = doitien / 23000;
+            }
+            else {
+                kq = doitien * 23000;
+            }
+            document.getElementById("ketqua").innerHTML = kq;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #dt10 {
+            background-color: aqua;
+            /* margin-left: auto; */
+            border: solid 10px rgb(245, 23, 7);
+            word-wrap: break-word;
+        }
+        #dt11 {
+            background-color: rgb(255, 248, 51);
+            /* margin-right: auto; */
+            border: solid 10px rgb(245, 23, 7);
+            word-wrap: break-word;
+        }
+        #dt1{
+          
+            background-color: rgb(255, 0, 238);
+            border-radius: 30px;
+            min-width: 60px;
+            padding: 19px;
+        }
+        #dt2 {  
+        
+            /* background-color: rgb(255, 0, 238); */
+            border-radius: 30px;
+            min-width: 60px;
+            padding: 19px;
+        }
+        #tin1, #tin {
+            width: 250px; 
+            word-wrap: break-word;
+        }
+        #tin2, #tin3{
+            width: 100px; 
+            word-wrap: break-word;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <table border="0px" cellspacing="1px" cellpadding="0px"id="dt10" >
+        <tr>
+            <td colspan="2">
+                <input type="textarea" id="stn01" placeholder="Nhập tin nhắn">
+            </td>
+            <td>
+                <p id="pin"></p>
+            </td>
+        </tr>
+            <tr>
+                <td colspan="3">
+                    <p id="bat"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="button" id="dt1" onclick="BatDienThoai()">
+                    🔓</button
+                  ><br /><br /></td>
+                <td> <button type="button" id="dt1" onclick="TatDienThoai()">
+                    🔒</button
+                  ><br /><br /></td>
+                  <td>
+                    <button type="button" id="dt1" onclick="SacPin()">🔋</button
+                        ><br /><br />
+                </td>
+             
+            </tr>
+            <tr>
+                <td>
+                      <button type="button" id="dt1" onclick="XemTinNhan()">📩</button>
+                    </p>
+                  </button>
+                
+                </td>
+                <td>
+                    <button type="button" id="dt1" onclick="XemTinNhanDaGui()">
+                        ✉</button
+                      ><br /><br />
+                </td>
+                <td>
+                    <button type="button" id="dt1" onclick="GuiTinNhan()">➤ </button
+                        ><br /><br />
+                   </td>
+            </tr>
+           
+        </table>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <p id="tin"></p>
+                </td>
+                <td>
+                    <p id="tin2"></p>
+                </td>
+            </tr>
+            </table><br>
+        <table border="0px" cellspacing="1px" cellpadding="0px" id="dt11">
+            <tr>
+                <td colspan="2">
+                    <input type="textarea" id="stn02" placeholder="Nhập tin nhắn">
+                </td>
+                <td>
+                    <p id="pin1"></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p id="bat1"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" id="dt2" onclick="BatDienThoai1()">
+                        🔓</button
+                      ><br /><br />
+                </td>
+                <td>
+                    <button type="button" id="dt2" onclick="TatDienThoai1()">
+                        🔒</button
+                      ><br /><br />
+                </td>
+                <td>
+                    <button type="button" id="dt2" onclick="SacPin1()"> 🔋</button
+                        ><br /><br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <button type="button" id="dt2" onclick="XemTinNhan1()">📩</button>
+                </td>
+                <td>
+                    <button type="button" id="dt2" onclick="XemTinNhanDaGui1()">
+                        ✉</button
+                      ><br /><br />
+                </td>
+                <td>
+                    <button type="button" id="dt2" onclick="GuiTinNhan1()">➤ </button
+                        ><br /><br />
+                </td>
+            </tr>
+           
+    </table>
+    <table>
+    <tr>
+        <td colspan="2">
+            <p id="tin1"></p>
+        </td>
+        <td colspan="2">
+            <p id="tin3"></p>
+        </td>
+    </tr>
+    </table>
+    
+    <script>
+        var Mobile = function (battery, luutinnhansoanthao, luutinnhanhopthuden, luutinnhandagui) {
+            //thuoc tinh
+            this.pinStatus = battery;
+            this.luu_tn_soan_thao = 'luutinnhansoanthao';
+            this.luu_tn_hop_thu_den = [luutinnhanhopthuden];
+            this.luu_tn_da_gui = luutinnhandagui;
+
+            //phương thức
+            this.battery = function () {
+                if (this.battery > 0) {
+                    return true;
+                } else {
+                    return false;
+                }
+
+            }
+            this.sturnOn = function () {
+                console.log("Dienthoaidangbat");
+            };
+
+            this.turnOff = function () {
+                console.log("Dienthoaidangtat");
+            };
+            this.charge = function () {
+                console.log('sạc pin' + this.battery++)
+            }
+            this.texting = function () {
+                console.log('soạn tin nhắn')
+            }
+            this.receiveMessages = function () {
+                console.log('nhận tin nhắn');
+            }
+            this.sendMessage = function () {
+                console.log('gửi tin nhắn');
+            }
+            this.seeinboxMessage = function () {
+                console.log('xem tin nhắn trong hộp thư đến');
+            }
+            this.xemtindagui = function(){
+                console.log('xem tin nhắn đã gửi');
+            }
+            this.sudungmotchucnang = function(){
+                console.log('sử dụng một chức năng ' + this.battery--);
+            }
+
+            
+        }
+        var dienthoai = new Mobile();
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

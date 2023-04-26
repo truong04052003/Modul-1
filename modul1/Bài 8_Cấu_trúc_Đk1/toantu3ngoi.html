@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = prompt("a: ");
+        var b = prompt("b: ");
+        a = parseInt(a);
+        b = parseInt(b);
+        if (a + b < 4) {
+            document.write('Below')
+        } else {
+            document.write('Over')
+        }
+    </script>
+
+
+
+
+    <script>
+        var a = prompt("a: ");
+        var b = prompt("b: ");
+        result(a + b < 4) ? 'Below' : 'Over'
+        document.write(result);
+
+    </script>
+
+
+
+    <script>
+        var message;
+        if (login == 'Employee') {
+            message('hello');
+        } else if (login == 'Director') {
+            message('Greetings');
+        } else if (login == '') {
+            message('No login');
+        } else {
+            message = '';
+        }
+
+
+        var login = prompt("Enter:");
+        var message = (login == 'Employee') ? 'Hello' :
+            (login == 'Director') ?
+                'Greetings' :
+                (login == '') ?
+                    'No login' :
+                    '';
+        alert(message);
+
+
+
+    </script>
+
+
+</body>
+
+</html>

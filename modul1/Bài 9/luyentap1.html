@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // bài 1
+        var a = parseInt(prompt('nhập a'))
+        var b = parseInt(prompt('nhập b'))
+        if (a % b == 0){
+            document.write("a chia hết cho b");
+        }else{
+            document.write ("a không chia hết cho b")
+        }
+
+        //=======================================================================
+
+        // bài 2
+
+        var age = prompt('nhập số tuổi')
+        if(age <= 16){
+            document.write("bạn đủ điều kiện vào học lớp 10")
+        }else {
+            document.write("bạn không đủ điều kiện vào lớp 10")
+        }
+
+        //====================================================================
+
+        // bài 3 
+        var a = prompt('nhập số ')
+        if (a > 0) {
+            console.log('lớn hơn 0');
+        } else if (a < 0) {
+            console.log('bé hơn 0');
+        } else {
+            console.log('bằng 0');
+        }
+
+        //===========================================================================
+
+        // bài 4 Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó
+        var a = prompt('nhập a')
+        var b = prompt('nhập b')
+        var c = prompt('nhập c')
+        if (a > b && a > c) {
+            console.log('a là lớn nhất');
+        } else if (b > c) {
+            console.log('b là lớn nhất');
+        } else {
+            console.log('c là lớn nhất');
+        }
+
+        //================================================================================
+
+
+
+        //    bài 5 Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ
+        var a = parseInt(prompt('Nhập điểm giữa kỳ'))
+        var b = parseInt(prompt('Nhập điểm thi cuối kỳ'))
+        var dtb = (a * 2 + b * 3) / 5
+        if (dtb >= 8) {
+            document.write("học sinh giỏi ")
+        } else if (dtb < 8 && dtb >= 6.5) {
+            document.write('học sinh tiên tiến')
+        } else {
+            document.write('học sinh trung binh')
+        }
+
+        //=======================================================================
+
+        //Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng
+
+           var sodon = parseInt(prompt('số đơn giới thiệu'));   
+                var pthoahong = 5; // phần % hoa hồng
+
+                //giá
+                var giadon = 50000
+
+                //tính tiền bán được
+                var tienbanduoc = gia * sodon
+
+                // tính hoa hồng của số đơn bán được
+                var hoahong = tienbanduoc / 100
+
+                alert('tiền hoa hồng bạn nhận được là: ' + hoahong * pthoahong + 'VND' + pthoahong)
+
+
+        //========================================================================================
+
+
+        //Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho
+        var mang = prompt('nhập mạng')
+        var sophut = prompt('nhập số phút')
+        if (mạng = 'viettel') {
+            var cuoc = sophut * 800
+            alert('số tiền cần phải trả cước điện thoại là ' + cuoc + 'VNĐ')
+        }
+            
+        
+            
+        
+
+
+
+
+    </script>
+</body>
+
+</html>

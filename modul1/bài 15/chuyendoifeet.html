@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="num"><br><br>
+    <button type="button" onclick="meter()">Meters</button>
+    <button type="button" onclick="feet()">Feet</button>
+    <script>
+        function feet() {
+            var feetnum = document.getElementById('num').value
+            document.write(feetnum * 3.279 )
+            return feetnum * 3.279 
+        }
+        function meter(){
+            var meternum = document.getElementById('num').value
+            document.write(meternum * 0.305)
+            return meternum * 0.305
+        }
+
+
+
+    </script>
+</body>
+
+</html>
